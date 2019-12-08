@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Wireframe 1 of 4</title>
-
+  <title>Canadian Quiz App</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to the Canadian Citizenship Quiz!</h1>
-    <h2>Ready to test your knowledge?</h2>
-    <button type="submit">Start Quiz</button>  
-  </div>
+<div id="entirepage">
+    <div class="introduction">
+        <h1>Welcome to the Canadian Citizenship Quiz!</h1>
+        <h2>Ready to test your knowledge?</h2>
+        <img height="200" src="https://www.theflagstore.ca/store/wp-content/uploads/2012/04/IMG_5851_2lowres.jpg" alt="Canadian flag">
+        <br>
+        <button class="button" type="submit"><a href="#" id="start" class="btn btn-primary btn-lg">Start Quiz!</a></button>
+        </br> 
+    </div>
+    <div id="interactivequiz">
+        <h3 id="question"></h3>
+        <br><br/>
+        <form id="form"></form>
+        <br><a href="#" id="next" class="button">Next Question</a><br/>
+    </div>
+    <div id="progressbar" class="progress-bar progress-bar-striped"></div>
+    <div id="result"></div>
+</div>
+  <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
