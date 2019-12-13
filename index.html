@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Canadian Quiz App</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-<div id="entirepage">
-    <div class="introduction">
-        <h1>Welcome to the Canadian Citizenship Quiz!</h1>
-        <h2>Ready to test your knowledge?</h2>
-        <img height="200" src="https://www.theflagstore.ca/store/wp-content/uploads/2012/04/IMG_5851_2lowres.jpg" alt="Canadian flag">
-        <br>
-        <button class="button" type="submit"><a href="#" id="start" class="btn btn-primary btn-lg">Start Quiz!</a></button>
-        </br> 
-    </div>
-    <div id="interactivequiz">
-        <h3 id="question"></h3>
-        <br><br/>
-        <form id="form"></form>
-        <br><a href="#" id="next" class="button">Next Question</a><br/>
-    </div>
-    <div id="progressbar" class="progress-bar progress-bar-striped"></div>
-    <div id="result"></div>
-</div>
-  <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-  </script>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Canadian Quiz App</title>
+    <meta name="description" content="Test your knowledge of Canada with this quiz">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Metrophobic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datastore.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header role="banner">
+      <div class="col-4">
+        <a href="index.html">
+          <img class="logo" src="https://www.stagelightingstore.com/76651-large_default/apollo-2-color-glass-gobo-1116-canadian-flag.jpg" alt="canadian flag"/>
+        </a>
+      </div>
+      <div class="col-8">
+        <ul>
+          <li>Question: <span class="questionNumber">0</span>/10</li>
+          <li>Score: <span class="score">0</span></li>
+        </ul>
+      </div>
+    </header>
+    <main role="main">
+      <div class="quizStart">
+        <h1>Would you pass the Canadian Citizenship test? Take this quick quiz to find out!</h1>
+        <button type="button" class="startButton">Start Quiz</button>
+      </div>
+      <div class="questionAnswerForm"></div>
+    </main>
+  </body>
 </html>
-
-
-
